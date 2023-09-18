@@ -16,12 +16,9 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarNav">                      
         <ul class="nav nav-pills">
-          {% url 'homepage:index' as index %}
-          {% include "includes/nav_item.html" with name="Главная" url=index %}
-          {% url 'ice_cream:ice_cream_list' as list %}
-          {% include "includes/nav_item.html" with name="Каталог мороженого" url=list %}
-          {% url 'about:description' as description %}
-          {% include "includes/nav_item.html" with name="О проекте" url=description %}
+          {% include "includes/nav_item.html" with name="Главная" url="homepage:index" %}
+          {% include "includes/nav_item.html" with name="Каталог мороженого" url="ice_cream:ice_cream_list" %}
+          {% include "includes/nav_item.html" with name="О проекте" url="about:description" %}
         </ul>
       </div>
       <a class="navbar-brand" href="{% url 'homepage:index' %}">
