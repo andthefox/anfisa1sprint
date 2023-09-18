@@ -1,5 +1,5 @@
 <li class="nav-item">
-    <a class="nav-link" href="{{url}}">
+    <a class="nav-link {% if request.path == url %}active{% endif %}" href="{{url}}">
       {{name}}
     </a>  
 </li>
